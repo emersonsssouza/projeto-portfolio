@@ -6,8 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
+body, html {
   height: 100vh;
   background-color: #424061ba;
   overflow-x: hidden;
@@ -19,7 +18,7 @@ header.header-topo {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 div.header-img {
@@ -38,7 +37,7 @@ div.header-img p {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
-  padding: 0px 10px;
+  padding: 10px;
 }
 
 header > nav.cabecalho-menu {
@@ -49,7 +48,7 @@ header > nav.cabecalho-menu {
 header > nav > a.cabecalho-menu-item {
   color: #fff;
   background-color: black;
-  padding: 10px 20px;
+  padding: 7px;
   border-radius: 20px;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
@@ -65,7 +64,7 @@ header > nav.cabecalho-menu a:hover {
 
 main {
   width: 80vw;
-  margin: 10px auto;
+  margin: auto;
 }
 
 section.conteudo-principal {
@@ -357,7 +356,7 @@ header.header-mobile {
     background-image: url(background/background-mobile.jpg);
     background-size: cover;
     background-position: center;
-    width: 80vw;
+    width: 100%;
   }
 
   section.portfolio {
