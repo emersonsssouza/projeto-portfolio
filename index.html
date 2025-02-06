@@ -5,193 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="largerMobile.css">
+    <link rel="stylesheet" href="largerDesktops.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Javascript/script.js" defer></script>
+
+
     <title>DEV Emerson</title>
 </head>
 
 <body>
-    <header class="header-topo">
-        <div class="header-img">
-            <img class="logo" src="imagens/perfil-linkedin.png" alt="Emerson" width="">
-            <p>Emerson Santos</p>
+    <main id="home">
+        <div class="homeContent">
+            <div class="homeItem">
+                <p class="paragraphy" id="P">Olá, Meu nome é</p>
+            </div>
+
+            <div class="homeItem">
+                <p id="title"><!--Texto digitado em JS--></p>
+            </div>
+
+            <div class="homeItem">
+                <i id="anime01" class="fa-brands fa-github"></i>
+                <i id="anime02" class="fa-brands fa-linkedin"></i>
+                <i id="anime03" class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div class="homeItem">
+                <i class="fa-solid fa-arrow-down fa-beat-fade"></i>
+            </div>
         </div>
-
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="https://github.com/emersonsssouza">Home</a>
-            <a class="cabecalho-menu-item" href="">Portfolio</a>
-            <a class="cabecalho-menu-item" href="">Redes Sociais</a>
-            <a class="cabecalho-menu-item" href="https://wa.me/+55(011)92005-5207">Contato</a>
-        </nav>
-
-    </header>
-
-    <header class="header-mobile">
-        <div class="mobile-logotipo">
-            <img src="logotipo/logotipo.png" alt="">
-        </div>
-
-        <div class="mobile-btn">
-            <button class="hamburguer" id="menuButton" onclick="clickMenu()">
-                <span class="span-button"></span>
-                <span class="span-button"></span>
-                <span class="span-button"></span>
-            </button>
-        </div>
-
-        <nav class="menu-list" id="menu-list">
-            <menu id="menu">
-                <ul class="nav-list" id="nav-list">
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Projetos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </menu>
-        </nav>
-
-        <div class="mobile-social">
-            <img class="" src="icones/icon-whatssap.png" alt="">
-            <img class="" src="icones/icon-linkedin.png" alt="">
-            <img class="" src="icones/icon-github-color.png" alt="">
-        </div>
-
-    </header>
-
-    <main class="conteudo">
-        <section class="conteudo-principal">
-
-        </section>
-
-        <section class="sec-btn">
-            <button class="btn-portfolio">
-                <img src="imagens/icon.ico" alt=""><a href="#portfolio" >Confira meu Portfolio</a>
-            </button>
-        </section>
-
-        <section class="portfolio">
-            <h1>Portfolio</h1>
-            <p>Confira meus trabalhos e projetos recentes</p>
-        </section>
-
-        <section class="portfolio-projetos">
-
-            <section class="item-projetos" id="portfolio">
-
-                <div class="portfolio-item">
-
-                    <div class="portfolio-item-texto">
-                        <a href="https://projeto-prefeitura.vercel.app/">Prefeitura de Igaratá</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://projeto-prefeitura.vercel.app/"><img class="item-img"
-                                src="back-imagens/back-prefeitura.png" alt="Prefeitura de Igaratá"></a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este é o código-fonte de um site institucional para a Prefeitura de Igaratá. Ele foi
-                            projetado para fornecer informações importantes sobre o município e seus serviços aos
-                            cidadãos.</p>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-item-texto">
-                        <a href="https://projeto-sistema-solar-lake.vercel.app/">Sistema solar</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://projeto-sistema-solar-lake.vercel.app/"><img class="item-img"
-                                src="back-imagens/sistema solar.png" alt="Sistema solar"></a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este é um projeto de página da web que apresenta o Sistema Solar de forma visual e auditiva.
-                            Ele é composto principalmente por um arquivo HTML, mas também faz referência a um arquivo
-                            CSS para estilização e a um arquivo de áudio para uma trilha sonora relacionada ao espaço.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-item-texto">
-                        <a href="https://formulario-gamma-pied.vercel.app/">Formulario</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://formulario-gamma-pied.vercel.app/"><img class="item-img"
-                                src="back-imagens/formulario.png" alt="Formulario"></a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este projeto consiste em uma página da web simples que exibe um formulário de login. É uma
-                            página HTML básica que utiliza algumas tags e estilos CSS para criar uma interface de login.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-item-texto">
-                        <a href="https://projeto-lampada-mu.vercel.app/">Lampada JS</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://projeto-lampada-mu.vercel.app/"><img class="item-img"
-                                src="back-imagens/lampada.png" alt="lampada"></a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este é um projeto simples de página da web que simula o controle de uma lâmpada usando
-                            JavaScript. A página possui uma interface básica com botões para ligar, desligar e quebrar a
-                            lâmpada.</p>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-item-texto">
-                        <a href="https://projeto-android-roan.vercel.app/">Android</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://projeto-android-roan.vercel.app/"><img class="item-img"
-                                src="back-imagens/android.png" alt="Android"></a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este projeto é uma página da web que oferece informações interessantes sobre o mascote do
-                            sistema operacional Android, bem como curiosidades relacionadas a esse sistema operacional.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-item-texto">
-                        <a href="https://projeto-rdk.vercel.app/">RDK Molas</a>
-                    </div>
-
-                    <div class="portfolio-item-conteudo">
-                        <a href="https://projeto-rdk.vercel.app/"><img class="item-img"
-                                src="back-imagens/back-rdk.png" alt="RDK Molas"> </a>
-                    </div>
-
-                    <div class="portfolio-item-descriçao">
-                        <p>Este projeto consiste em uma página web que representa a RDK Indústria e Comércio de Molas. A
-                            página possui informações sobre a empresa, seus produtos, máquinas, certificações e
-                            informações de contato.</p>
-                    </div>
-
-                </div>
-            </section>
-        </section>
-
     </main>
+
+    <main class="apresentation">
+
+        <div class="apresentationContainer">
+            <h1 class="paragraphy" id="p1">Bem vindos ao meu portfolío</h1>
+            <p id="paragraphy">Confira meus trabalhos e projetos recentes</p>
+        </div>
+
+        <div class="gridContainer">
+            <div class="gridItem">
+                <a href=""><img src="Projects/1.png" alt="" id="p3"></a>
+                <h2 id="p3">Tesla Eletric Cars</h2>
+            </div>
+
+            <div class="gridItem">
+                <a href=""><img src="Projects/2.png" alt="" id="p4"></a>
+                <h2 id="p4">RDK Molas</h2>
+            </div>
+
+            <div class="gridItem">
+                <a href=""><img src="Projects/3.png" alt="" id="p3"></a>
+                <h2 id="p3">Pizzaria Bellamassa</h2>
+            </div>
+
+            <div class="gridItem">
+                <a href=""><img src="Projects/4.png" alt="" id="p4"></a>
+                <h2 id="p4">Academia SmartFit</h2>
+            </div>
+
+            <div class="gridItem">
+                <a href=""><img src="Projects/5.png" alt="" id="p3"></a>
+                <h2 id="p3">Faculdade ITIA</h2>
+            </div>
+
+            <div class="gridItem">
+                <a href=""><img src="Projects/6.png" alt="" id="p4"></a>
+                <h2 id="p4">CaféBar</h2>
+            </div>
+        </div>
+
+        <section id="competence">
+            <div class="compTitle">
+                <h2 id="p5">Habilidades</h2>
+            </div>
+            <div id="competenceContainer">
+                <div class="skills">
+                    <i class="fa-brands fa-html5" style="color: #DD4B25;"></i>
+                    <h3>Html</h3>
+                    <p>Tenho experiência em criar a estrutura básica de páginas web utilizando HTML. Sou capaz de
+                        organizar conteúdos de forma semântica, utilizando tags apropriadas como cabeçalhos, parágrafos,
+                        listas, links e imagens.</p>
+                </div>
+
+                <div class="skills">
+                    <i class="fa-brands fa-css3" style="color: #254BDD;"></i>
+                    <h3>css</h3>
+                    <p>Possuo conhecimentos para estilizar páginas web, aplicando cores, fontes, espaçamentos e bordas.
+                        Sei utilizar seletores básicos e avançados, além de ferramentas como Flexbox e Grid para criar
+                        layouts simples e responsivos.</p>
+                </div>
+
+                <div class="skills">
+                    <i class="fa-brands fa-js" style="color: #EFD81D;"></i>
+                    <h3>JS</h3>
+                    <p>Entendo os fundamentos da linguagem, como variáveis, funções e eventos. Tenho habilidade para
+                        manipular o DOM, criando interatividade e dinamicidade em páginas web, como validações de
+                        formulários e alterações em tempo real.</p>
+                </div>
+
+                <div class="skills">
+                    <i class="fa-brands fa-php" style="color: #7377AD;"></i>
+                    <h3>Php</h3>
+                    <p>Possuo noções fundamentais de PHP, incluindo a sintaxe básica da linguagem, manipulação de
+                        variáveis, estruturas de controle funções. criação
+                        de scripts simples para processar formulários e lidar com requisições HTTP.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/emersonsssouza">Emerson Santos</a> desenvolvedor Web</p>
+        <div id="footerContainer">
+            <img src="imagens/1697283315128.png" alt="meuPerfil" width="200px">
+
+            <div id="footerItems">
+                <h2 id="p6">Desenvolvedor Web</h2>
+                <ul class="list">
+                    <li id="p7"><i class="fa-solid fa-location-dot"></i> Igaratá, São Paulo</li>
+                    <li id="p8"><i class="fa-regular fa-address-book"></i> Me contate via Whatssap</li>
+                </ul>
+                <button id="p9"><a href="">Acesse meu CV </a><i class="fa-regular fa-file"></i></button>
+            </div>
+
+        </div>
     </footer>
 
 </body>

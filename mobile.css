@@ -1,0 +1,52 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .homeItem .paragraphy {
+        font-size: 1.2rem;
+    }
+
+    .homeItem #title {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .apresentationContainer .paragraphy {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .apresentationContainer #paragraphy {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gridItem img {
+        width: 100%;
+    }
+
+    .gridContainer .gridItem h2 {
+        font-family: "TiltNeon";
+        font-size: 1.2rem;
+    }
+
+    .compTitle h2 {
+        font-family: "SpaceAge";
+        font-size: 2rem;
+    }
+
+    #competenceContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        margin: 5px;
+        box-shadow: none;
+    }
+
+    #footerContainer img {
+        display: none;
+    }
+}
