@@ -278,6 +278,16 @@ footer {
   font-family: "TiltNeon";
 }
 
+#footerItems .list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footerItems .list li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 #footerItems button {
   padding: 10px;
   margin: 10px;
